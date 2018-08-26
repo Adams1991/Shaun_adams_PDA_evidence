@@ -63,7 +63,7 @@ describe('calculator', function () {
     calculator.clearClick();
     calculator.numberClick(6);
     calculator.operatorClick("=");
-    const result = calculator.previousTotal;
+    const result = calculator.runningTotal;
     assert.equal(result, 10)
   })
 
